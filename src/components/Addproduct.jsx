@@ -1,6 +1,5 @@
 import axios from "axios"
 import React, { useState } from "react"
-import { Navigate } from "react-router-dom"
 
 const Addproduct = () => {
 
@@ -36,6 +35,8 @@ const Addproduct = () => {
 
     
     }catch (error){
+        setError(error.message)
+        setLoading("")
     }
 }
 

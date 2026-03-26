@@ -9,7 +9,7 @@ let navigate = useNavigate()
 const [email, setEmail] = useState("")
 const [password, setPassword] = useState("")
 
-{/* states for posting data  */}
+/* states for posting data  */
 const[loading, setLoading] = useState("")
 const [success, setSuccess] = useState("")
 const [error, setError] = useState("")
@@ -43,6 +43,8 @@ const handlesubmit = async (e) => {
             setSuccess(response.data.message)
         }
     }catch (error) {
+        setError(error.message)
+        setLoading("")
     }
 }
 

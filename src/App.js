@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,7 +18,7 @@ function App() {
         {/* navbar goes here */}
         <Navbar/>
         <header className="App-header">
-          <h1><marquee behavior="" direction="">Welcome to Vinywaji</marquee></h1>
+          <h1><marquee behavior="" direction="">Welcome to Vinywaji Proper</marquee></h1>
         </header>
 
         <nav className='text-center'>
