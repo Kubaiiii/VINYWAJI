@@ -6,7 +6,7 @@ import { useLocation } from "react-router-dom"
 const Mpesapayment = () => {
 
   const {singleproduct} = useLocation().state || {}
-  const imagepath = "http://peterhiggs.alwaysdata.net/static/images/"
+  const imagepath = "https://peterhiggs.alwaysdata.net/static/images/"
 
   // declare your states here 
   const [phone, setPhone] = useState("")
@@ -26,7 +26,7 @@ const Mpesapayment = () => {
     formdata.append("amount", singleproduct.product_cost)
 
     try{
-      const response = await axios.post("http://peterhiggs.alwaysdata.net/api/mpesa_payment", formdata)
+      const response = await axios.post("https://peterhiggs.alwaysdata.net/api/mpesa_payment", formdata)
       setSuccess(response.data.message)
       setLoading("")
     }

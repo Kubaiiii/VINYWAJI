@@ -28,7 +28,7 @@ const Addproduct = () => {
         formdata.append("product_photo", product_photo)
 
    try {
-        const response =await axios.post("http://peterhiggs.alwaysdata.net/api/addproduct",formdata)
+        const response =await axios.post("https://peterhiggs.alwaysdata.net/api/addproduct",formdata)
         setSuccess(response.data.message)
         setLoading("")
         // If product is added successfully save data to local storage
