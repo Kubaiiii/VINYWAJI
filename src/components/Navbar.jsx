@@ -7,7 +7,7 @@ const Navbar = () => {
                 {/* a nav with navbar content */}
                 <nav class="navbar navbar-expand-md bg-light">
                     <img src="images/logo.jpeg" alt="" width={60}/>
-                    <a href="" class="navbar-brand text-danger">Vinywaji Proper</a>
+                    <a href="/" class="navbar-brand text-danger">Vinywaji Proper</a>
                     <button class="navbar-toggler" data-bs-target="#navbarcollapse" data-bs-toggle="collapse">
                         <span class="navbar-toggler-icon"></span>
                     </button>
